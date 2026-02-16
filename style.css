@@ -103,12 +103,12 @@ button {
 
 .guessButton,
 .resetButton {
-    width: auto;
+  width: auto;
   padding: 12px;
   font-size: 1rem;
   border-radius: 8px;
-    min-width: 140px;
-    align-self: center;
+  min-width: 140px;
+  align-self: center;
 }
 
 .guessButton.disabled {
@@ -170,10 +170,11 @@ button {
   }
   .guess-area .guessButton {
     flex: 0 0 140px;
-}
+  }
 
-@media (min-width: 1000px) {
-  html {
-    font-size: 17px;
+  @media (min-width: 1000px) {
+    html {
+      font-size: 17px;
+    }
   }
 }
