@@ -7,12 +7,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>숫자 맞추기 게임</h1>
-    <div>결과 : <span class="result"> </span></div>
-    <label for="guessInput">1부터 100까지의 숫자 중 하나를 맞춰보세요</label
-    ><br />
-    <input type="number" id="guessInput" />
-    <button class="guessButton">가즈아!</button>
+    <div class="game-container">
+      <header class="game-header">
+        <h1>숫자 맞추기 게임</h1>
+      </header>
+      <section class="game-status">
+        <div class="attempts-area">
+          <span class="remainingChance">⭐⭐⭐⭐⭐</span>
+        </div>
+        <div class="guess-area">
+          <input
+            placeholder="1~100 사이 숫자"
+            type="number"
+            id="guessInput"
+            min="1"
+            max="100"
+          />
+          <button type="button" class="guessButton">가즈아!</button>
+        </div>
+        <div class="result-area hidden"><span class="result"> </span></div>
+        <button type="reset" class="resetButton">초기화</button>
+      </section>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
