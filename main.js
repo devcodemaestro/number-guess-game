@@ -9,7 +9,6 @@ let remainingChance = document.querySelector(".remainingChance");
 let gameOver = false;
 let history = [];
 let correctAnswer;
-let answer = document.querySelector(".answer");
 
 goButton.addEventListener("click", play);
 userInput.addEventListener("keydown", enterPlay);
@@ -71,7 +70,6 @@ function play() {
   if (gameOver === true) {
     goButton.disabled = true;
     goButton.classList.add("disabled");
-    answer.classList.remove("hidden");
   }
 }
 
@@ -97,8 +95,6 @@ function reset() {
   result.classList.add("original");
   history = [];
   userInput.focus();
-  answer.classList.add("hidden");
-  answer.textContent = "";
 }
 
 pickRandomNum();
